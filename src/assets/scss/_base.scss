@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Padauk:wght@400;700&family=Space+Mono&display=swap');
+
+body {
+  font-family: map-get($--font, 'base');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: map-get($--color-gray, '900');
+  font-size: 16px;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: map-get($--font, 'mono');
+}

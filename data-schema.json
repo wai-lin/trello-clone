@@ -1,0 +1,126 @@
+{
+  "workspaces": [
+    {
+      "_id": "1",
+      "name": "workspace1",
+      "members": [
+        {
+          "member_id": "1",
+          "permission": "owner"
+        }
+      ]
+    }
+  ],
+  "boards": [
+    {
+      "_id": "1",
+      "workspace_id": "1",
+      "name": "b1",
+      "members": [
+        {
+          "member_id": "1",
+          "permission": "owner"
+        }
+      ],
+      "visibility": "internal",
+      "est_timeline": ["start", "end"],
+      "timeline": ["start", "end"]
+    }
+  ],
+  "columns": [
+    {
+      "_id": "1",
+      "board_id": "1",
+      "name": "col1"
+    }
+  ],
+  "cards": [
+    {
+      "_id": "1",
+      "column_id": "1",
+      "name": "c1",
+      "est_timeline": ["start", "end"],
+      "timeline": ["start", "end"],
+      "members": [
+        {
+          "member_id": "1",
+          "permission": "read"
+        }
+      ],
+      "labels": ["1", "2"],
+      "description": "",
+      "tasks": {
+        "tasks1": [
+          {
+            "completed": true,
+            "text": "blah blah blah"
+          }
+        ]
+      },
+      "comments": [
+        {
+          "_id": "1",
+          "user_id": "1",
+          "comment": ""
+        }
+      ]
+    }
+  ],
+  "bg_colors": [
+    {
+      "_id": "1",
+      "bg_color": "#fff",
+      "text_color": "#000"
+    }
+  ],
+  "labels": [
+    {
+      "_id": "1",
+      "name": "priority_low",
+      "bg_color": "1",
+      "description": ""
+    }
+  ],
+  "dashboard": [
+    {
+      "_id": "1",
+      "name": "dash1",
+      "columns": ["1", "2"]
+    }
+  ],
+  "users": [
+    {
+      "_id": "1",
+      "name": "user1"
+    }
+  ],
+  "roles": [
+    {
+      "type": "owner",
+      "permissions": ["control", "read", "write"]
+    },
+    {
+      "type": "member",
+      "permissions": ["read", "write"]
+    },
+    {
+      "type": "guest",
+      "permissions": ["read"]
+    }
+  ],
+  "permissions": [
+    {
+      "type": "read",
+      "authorities": ["comment"]
+    },
+    {
+      "type": "write",
+      "authorities": ["edit", "comment"]
+    },
+    {
+      "type": "control",
+      "authorities": ["delete", "edit", "comment"]
+    }
+  ],
+  "visibility": ["public", "internal", "members", "private"]
+}
